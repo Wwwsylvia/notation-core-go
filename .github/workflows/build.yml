@@ -9,3 +9,9 @@ on:
 jobs:
   build:
     uses: ./.github/workflows/reusable_build.yml
+  playaround:
+      runs-on: ubuntu-latest
+      steps:
+        - name: test print
+          run: echo "TEST!"
+  
